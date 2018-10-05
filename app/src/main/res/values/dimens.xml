@@ -7,27 +7,5 @@
     <dimen name="cardcorner_radius">10dp</dimen>
     <dimen name="cardview_content_margin">8dp</dimen>
     <dimen name="place_name_size">18sp</dimen>
-    <dimen name="hotel_lat">22.31027684</dimen>
-    <dimen name="hotel_long">73.16915987</dimen>
-    <dimen name="inox_lat">22.31304363</dimen>
-    <dimen name="inox_long">73.15788198</dimen>
-    <dimen name="inorbit_lat">22.32215381</dimen>
-    <dimen name="inorbit_long">73.16546129</dimen>
-    <dimen name="pvr_lat">22.3137216</dimen>
-    <dimen name="pvr_long">73.18140608</dimen>
-    <dimen name="havmor_lat">22.30183879</dimen>
-    <dimen name="havmor_long">73.16581332</dimen>
-    <dimen name="taj_mahal_lat">27.1750</dimen>
-    <dimen name="taj_mahal_long">78.0422</dimen>
-    <dimen name="zoo_lat">22.31337863</dimen>
-    <dimen name="zoo_long">73.19018833</dimen>
-    <dimen name="museum_lat">22.31121486</dimen>
-    <dimen name="museum_long">73.18999522</dimen>
-    <dimen name="gallery_lat">22.31206846</dimen>
-    <dimen name="gallery_long">73.18875067</dimen>
-    <dimen name="akshardham_lat">20.8880</dimen>
-    <dimen name="akshardham_long">70.4012</dimen>
-    <dimen name="kumbalgadh_lat">25.1528</dimen>
-    <dimen name="kumbalgadh_long">73.5870</dimen>
 
 </resources>
