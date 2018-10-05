@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Guide</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="place_name">Name</string>
+    <string name="place_description">Description</string>
+    <string name="place_distance">Distance :</string>
+    <string name="hotel_express_name">Hotel Express Towers</string>
+    <string name="gps_settings">GPS settings</string>
+    <string name="gps_not_enabled">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="inox_name">Inox Race Course</string>
+    <string name="inox_description">World class Movie theater on Race Course Road</string>
+    <string name="inorbit_name">Inorbit Game Zone</string>
+    <string name="inorbit_description">Game Zone for Kids, Adults where you get games like racing, bowling etc.</string>
+    <string name="pvr_name">PVR Cinemas</string>
+    <string name="pvr_description">PVR Cinema located at Central Bus Stand is a low cost, standard movie theater.</string>
+    <string name="havmor_name">Havmor Restaurant</string>
+    <string name="sample_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eros velit, faucibus in mi in, accumsan eleifend magna. Fusce efficitur volutpat leo nec finibus. Vivamus luctus quis dolor ac interdum.</string>
+    <string name="taj_mahal_name">Taj Mahal</string>
+    <string name="taj_mahal_description">The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favourite wife, Mumtaz Mahal.</string>
+    <string name="zoo_name">Tiger Zoo</string>
+    <string name="zoo_description">The Zoo is located in the most popular Sayaji Garden where you can find tiger, zebra, monkeys, birds etc.</string>
+    <string name="museum_name">Musuem</string>
+    <string name="museum_description">The museum is located in the most popular Sayaji Garden where you can find various skeletons of dinosaurs and whales etc.</string>
+    <string name="gallery_name">Picture Gallery</string>
+    <string name="gallery_description">It contains many paintings of baroda in the past and of various animals and fish</string>
+    <string name="akshardham_name">Akshardham</string>
+    <string name="kumbalgadh_name">Kumbalgadh</string>
+    <string name="kumbalgadh_description">15th-century, hilltop fort and UNESCO-listed site surrounded by a massive, 36km-long perimeter wall.</string>
+    <string name="attractions">Attractions</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
+    <string name="km">km</string>
+</resources>
