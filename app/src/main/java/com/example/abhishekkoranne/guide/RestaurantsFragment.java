@@ -72,26 +72,10 @@ public class RestaurantsFragment extends Fragment implements LocationListener {
         locHavmor.setLatitude(22.30183879);
         locHavmor.setLongitude(73.16581332);
 
-/*
-        if (location == null) {
-
-            gpsSettings();
-            locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-            criteria = new Criteria();
-            bestProvider = String.valueOf(locationManager.getBestProvider(criteria, true));
-
-            if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-                gpsSettings();
-                return;
-            }
-            long minTime = 1000;
-            float distance = 0;
-            locationManager.requestLocationUpdates(bestProvider, minTime, distance, this);
-            Log.d("map", "location Latitude: " + lat);
-
+        if (lat == 0 || lon == 0) {
+            lat = 22.3311940;
+            lon = 73.1343920;
         }
-*/
         float[][] distance = new float[1][1];
         Location.distanceBetween(lat, lon, locHavmor.getLatitude(), locHavmor.getLongitude(), distance[0]);
 

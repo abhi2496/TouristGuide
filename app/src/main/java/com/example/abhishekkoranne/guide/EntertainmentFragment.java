@@ -77,26 +77,10 @@ public class EntertainmentFragment extends Fragment implements LocationListener 
         locPvr.setLatitude(22.3137216);
         locPvr.setLongitude(73.18140608);
 
-/*
-        if (location == null) {
-
-            gpsSettings();
-            locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-            criteria = new Criteria();
-            bestProvider = String.valueOf(locationManager.getBestProvider(criteria, true));
-
-            if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-                gpsSettings();
-                return;
-            }
-            long minTime = 1000;
-            float distance = 0;
-            locationManager.requestLocationUpdates(bestProvider, minTime, distance, this);
-            Log.d("map", "location Latitude: " + lat);
-
+        if (lat == 0 || lon == 0) {
+            lat = 22.3311940;
+            lon = 73.1343920;
         }
-*/
         float[][] distance = new float[6][1];
         Location.distanceBetween(lat, lon, locInox.getLatitude(), locInox.getLongitude(), distance[0]);
         Location.distanceBetween(lat, lon, locInorbitGameZone.getLatitude(), locInorbitGameZone.getLongitude(), distance[1]);

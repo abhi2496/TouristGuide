@@ -87,27 +87,14 @@ public class AttractionsFragment extends Fragment implements LocationListener {
         locKumbalgadh.setLatitude(25.1528);
         locKumbalgadh.setLongitude(73.5870);
 
-/*
-        if (location == null) {
-
-            gpsSettings();
-            locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-            criteria = new Criteria();
-            bestProvider = String.valueOf(locationManager.getBestProvider(criteria, true));
-
-            if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-                gpsSettings();
-                return;
-            }
-            long minTime = 1000;
-            float distance = 0;
-            locationManager.requestLocationUpdates(bestProvider, minTime, distance, this);
-            Log.d("map", "location Latitude: " + lat);
-
+        if (lat == 0 || lon == 0) {
+            lat = 22.3311940;
+            lon = 73.1343920;
         }
-*/
+
         float[][] distance = new float[6][1];
+
+
         Location.distanceBetween(lat, lon, locTajMahal.getLatitude(), locTajMahal.getLongitude(), distance[0]);
         Location.distanceBetween(lat, lon, locZoo.getLatitude(), locZoo.getLongitude(), distance[1]);
         Location.distanceBetween(lat, lon, locMuseum.getLatitude(), locMuseum.getLongitude(), distance[2]);
@@ -154,6 +141,7 @@ public class AttractionsFragment extends Fragment implements LocationListener {
             } else {
                 if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     gpsSettings();
+
                     return;
                 }
                 locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, this);
